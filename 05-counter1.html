@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="it" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script type="text/javascript">
+      
+      let contatore = 0;
+      let array_numero = [5, 7, 11, 13];
+
+      function count() {
+        contatore ++;
+        document.querySelector("#contatore").innerHTML = contatore;
+        if (array_numero.includes(contatore)) {
+          alert(`Contatore a ${ contatore }: presente in array!`)
+        } else {
+          console.log(contatore)
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <h1 id="contatore">0</h1>
+    <button onclick="count()">
+      click</button>
+  </body>
+</html>
